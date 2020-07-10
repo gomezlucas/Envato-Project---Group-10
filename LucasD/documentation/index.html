@@ -9,7 +9,7 @@
 <head>
   <meta charset="utf-8" />
 
-  <title> Bakery Site - Documentation</title>
+  <title> Baker's Portfolio - Documentation</title>
 
   <meta name="description" content="" />
   <meta name="author" content="Team Syntax" />
@@ -151,8 +151,8 @@
       <li><a href="#fonts" title="Fonts">Fonts</a></li>
       <li><a href="#icons" title="Icons">Icons</a></li>
       <li><a href="#logo" title="Logo">Logo</a></li>
+      <li><a href="#animation" title="Logo">Animation</a></li>
       <li><a href="#sliders" title="Sliders">Sliders</a></li>
-      <li><a href="#google_map" title="Google Map">Google Map</a></li>
       <li>
         <a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a>
       </li>
@@ -164,19 +164,18 @@
   </div>
   <div id="documenter_content">
     <section id="documenter_cover">
-      <h1> Bakery Site </h1>
-      <h2>Responsive HTML5 Template</h2>
+      <h1> Baker's Portfolio </h1>
+      <h2>Responsive HTML5 Template and Boostrap</h2>
       <div id="documenter_buttons"></div>
       <hr />
       <ul>
-        <li>created: 03/07/2020</li>
-        <li>latest update: 03/07/2020</li>
-        <li>by: teamsyntax</li>
+        <li>created: 10/07/2020</li>
+        <li>latest update: 10/07/2020</li>
+        <li>by: @lucasD</li>
 
         <li>
           email:
-          <a
-            href="mailto:&#104;&#101;&#108;&#108;&#111;&#64;&#104;&#110;&#103;&#46;&#116;&#101;&#99;&#104;">&#104;&#101;&#108;&#108;&#111;&#64;&#104;&#110;&#103;&#46;&#116;&#101;&#99;&#104;</a>
+          <a href="mailto:gomez.d.lucas@gmail.com"> gomez.d.lucas@gmail.com</a>
         </li>
       </ul>
       <p></p>
@@ -189,7 +188,8 @@
       </div>
       <pre class="prettyprint lang-html linenums">
 - assets/css                    (Template CSS)
-- assets/images                    (All Images)
+- assets/images                 (All Images)
+- assets/fonts                  (All font families)
 - assets/js                     (Template JS)</pre>
       <p>
         &nbsp;
@@ -255,9 +255,9 @@
       <pre class="prettyprint lang-html linenums">
 - assets/
   - css/
-    - style.css                - (Main CSS file) 
-    - residence.css             - (Residence Specific CSS file) Example 
-    - bootstrap/bootstrap.min.css - (Bootstrap Minified CSS file)
+    - style.css                      - (Main CSS file) 
+    - swiper/swiper-bundle.min.css   - (Swiper Minified CSS file)
+    - bootstrap/bootstrap.min.css    - (Bootstrap Minified CSS file)
 
 </pre>
     </section>
@@ -289,6 +289,10 @@
 &lt;script src=&quot;./assets/js/bootstrap/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;       
 &lt;!-- Popper JS --&gt;
 &lt;script src=&quot;./assets/js/popper/popper.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
+&lt;!-- Swiper JS --&gt;
+&lt;script src=&quot;/assets/js/swiper/swiper-bundle.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
+&lt;!-- Swiper Custome JS --&gt;
+&lt;script src=&quot;./assets/js/swiper/swiperjs-custom.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
 &lt;!-- Custom JS --&gt;
 &lt;script src=&quot;./assets/js/custom.js&quot;&gt;&lt;/script&gt;
 </pre>
@@ -302,21 +306,43 @@
       </div>
       <div>
         To change the embedded font, please take a look in the head part of
-        assets/css/theme.css:
+        assets/css/styles.css:
       </div>
       <div>
         &nbsp;
       </div>
       <div>
         <pre class="prettyprint lang-html linenums">
-Change here the font used
-            </pre>
+          @font-face {
+            font-family: "Clicker Script";
+            src: url("../fonts/ClickerScript-Regular.ttf");
+          }
+          
+          /*default version */
+          @font-face {
+            font-family: "Nunito Sans";
+            src: url("../fonts/NunitoSans-Regular.ttf");
+          }
+          
+          /*Light version */
+          @font-face {
+            font-family: "Nunito Sans";
+            src: url("../fonts/NunitoSans-Light.ttf");
+          }
+          
+          /*Bold version */
+          @font-face {
+            font-family: "Nunito Sans";
+            src: url("../fonts/NunitoSans-Bold.ttf");
+          }
+                      </pre>
       </div>
       <p>&nbsp;</p>
       <div>
         <div>
-          To change the font, first go to http://www.google.com/webfonts
-          choose a font and add the generated code to the top of global.css.
+          To change the font, first go to http://www.google.com/webfonts. Then put the file downloaded inside the fonts
+          folder.
+
         </div>
         <div>
           &nbsp;
@@ -329,16 +355,26 @@ Change here the font used
         </div>
         <div>
           <pre class="prettyprint lang-css linenums">
-:root {
-  --header-font: 'Playfair Display', serif;
-  --text-font: 'Poppins', sans-serif;
-  --nav-font: 'Varela Round', sans-serif;
-  --primary-color: #4070ff;
-  --secondary-color: #5983ff;
-  --grey-color: #e0e0e0;
-  --dark-color: #333;
-  --white-color: #fff;
-}</pre>
+            :root {
+              --title-font: "Clicker Script", cursive;
+              --text-font: "Nunito Sans", sans-serif;
+              --primary-color: #664e00;
+              --secondary-color: #e6b001;
+              --title-color: #cc9d01;
+              --navbar-text: #4b420b;
+              --grey-color: #e5e5e5;
+              --green-color: #adb901;
+              --background-about: linear-gradient(
+                34.34deg,
+                #a7b2c3 19.51%,
+                #ccd5df 31.73%,
+                #d5dee6 50.37%,
+                #d5dee6 64.83%
+              );
+              --footer-color: #bbc443;
+              --white-color: #fff;
+              --black-color: #000000;
+            }</pre>
         </div>
       </div>
     </section>
@@ -348,7 +384,7 @@ Change here the font used
         <hr class="notop" />
       </div>
       <div>
-        All font are located in the images directory
+        All Icons are located in the images directory
       </div>
       <div>
         &nbsp;
@@ -359,7 +395,7 @@ Change here the font used
       </div>
       <div>
         <p>
-          We are using svg fonts which you can get more and add to
+          We are using svg/png icons which you can get more and add to
           assets/images/icons
         </p>
       </div>
@@ -377,13 +413,29 @@ Change here the font used
 &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./assets/images/...path to your logo<span style="font-family: Arial, Verdana, sans-serif;">... path to your image logo ...</span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; &lt;/a&gt;</span>
 </pre>
     </section>
+
+
+    <section id="animation">
+      <div class="page-header">
+        <h3>Animation on Scroll </h3>
+        <hr class="notop" />
+      </div>
+      <p>
+        This template uses Aos to animate the elements. To change the time or just remove them you can check the
+        documentation <a href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a>
+      </p>
+
+      <pre class="prettyprint lang-html linenums">
+        &lt;div data-aos=&quot; fade-up&quot; &gt >&lt;/div&gt >
+      </pre>
+    </section>
     <section id="sliders">
       <div class="page-header">
         <h3>Sliders</h3>
         <hr class="notop" />
       </div>
       <div>
-        Slick slider is the slider you will find in the content. It's an essay
+        SwipeJs slider is the slider you will find in the content. It's an essay
         to use lighweight carousel with some decent features.
       </div>
       <div>
@@ -392,45 +444,55 @@ Change here the font used
       <div>
         <div>
           <div>
-            Estate Section slider has class &#39;sliders&#39; and each slide
-            has &#39;&lt;div class=&quot;slider-item&quot;&gt;&#39; wrapper
-            for easy find where slide html code start. If you wont remove some
-            slide just remove div with all content like this &#39;&lt;div
-            class=&quot;item&quot;&gt;&#39;
+            Estate Section slider has class &#39;swiper-slide&#39; and each slide
+            has &#39;&lt;div class=&quot;portfolio__card&quot;&gt;&#39; wrapper
+            for easy find where slide html code start. If you want to remove or add some
+            slide just remove/add div with all content like this &#39;&lt;div
+            class=&quot;portfolio__card&quot;&gt;&#39;
           </div>
           <div>
             &nbsp;
           </div>
         </div>
         <pre class="prettyprint lang-html linenums">
-&lt;!-- Sliders --&gt;
-&lt;div class=&quot;sliders&quot;&gt;
-    &lt;div class=&quot;row home-sliders&quot;&gt;
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-          &lt;img src=&quot;./assets/images/sliders/house.png&quot; alt=&quot;Exclusive Apartment&quot; class=&quot;img-fluid slider-img&quot; &gt;
-          &lt;div class=&quot;slider-desc p-2 px-3&quot;&gt;
-            &lt;p class=&quot;slider-name m-0&quot;&gt;Exclusive Apartment&quot;/p&gt;
-            &lt;a href=&quot;#&quot; class=&quot;slider-link&quot;&gt;Explore &gt;&quot;/a&gt;
-          &lt;/div&gt;          
-      &lt;/div&gt;
-
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-            ...
-      &lt;/div&gt;
-
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-            ...
-      &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
-&lt;!-- /.Testimonial --&gt;</pre>
+          &lt;!-- Slider main container --&gt;
+          &lt;div class=&quot;swiper-container&quot;&gt;
+            &lt;!-- Additional required wrapper --&gt;
+            &lt;div class=&quot;swiper-wrapper&quot;&gt;
+              &lt;!-- Slides --&gt;
+              &lt;div class=&quot;swiper-slide&quot;&gt;
+                &lt;div class=&quot;portfolio__card&quot;&gt;
+                  &lt;img src=&quot;./assets/images/portfolio/1.png&quot; alt=&quot;&quot;&gt;
+                  &lt;button class=&quot;btn btn-portfolio text-uppercase&quot;&gt; Desserts &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;swiper-slide&quot;&gt;
+                &lt;div class=&quot;portfolio__card&quot;&gt;
+                  &lt;img src=&quot;./assets/images/portfolio/1.png&quot; alt=&quot;&quot;&gt;
+                  &lt;button class=&quot;btn btn-portfolio text-uppercase&quot;&gt; cupcakes &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;swiper-slide&quot;&gt;
+                &lt;div class=&quot;portfolio__card&quot;&gt;
+                  &lt;img src=&quot;./assets/images/portfolio/1.png&quot; alt=&quot;&quot;&gt;
+                  &lt;button class=&quot;btn btn-portfolio text-uppercase&quot;&gt; Cakes &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- If we need pagination --&gt;
+            &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+      
+            &lt;!-- If we need navigation buttons --&gt;
+            &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
+      </pre>
         <div>
           &nbsp;
         </div>
         <div>
           If you want change option for sliders you need to open
-          assets/js/custom.js and find &#39;// Our Sliders Start&#39; function
-          and set true/false for option what you wont to change
+          assets/js/swiper/swiperjs-custom.js and find &#39;// Our Sliders Start&#39; function
+          and set true/false for option what you wont to change.
         </div>
         <div>
           &nbsp;
@@ -439,85 +501,39 @@ Change here the font used
           &nbsp;
         </div>
         <pre class="prettyprint lang-js linenums">
-// Slick Slider Configuration
-$(document).ready(function () {
-  // Homepage Sliders
-  $('.home-sliders').slick({
-    autoplaySpeed: 2000,
-    slidesToShow: 3,
-    dots: true,
-    prevArrow: $('.prev-btn'),
-    nextArrow: $('.next-btn'),
-  })
-
-  $('.residence-sliders').slick({
-    autoplaySpeed: 2000,
-    slidesToShow: 4,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slideToScroll: 1,
-        },
-      },
-    ],
-  })
-})
+          // Swiper JS
+          var mySwiper = new Swiper('.swiper-container', {
+             // Optional parameters
+             direction: 'horizontal',
+             loop: true,
+             // Navigation arrows
+             navigation: {
+                 nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+             },
+             breakpoints: {
+                 640: {
+                   slidesPerView: 1,
+                   spaceBetween: 20,
+                 },
+                 768: {
+                   slidesPerView: 2,
+                   spaceBetween: 40,
+                 },
+                 1024: {
+                   slidesPerView: 3,
+                   spaceBetween: 50,
+                 },
+               }
+         
+          
+         })
 </pre>
       </div>
       <p>
-        You can find more documentation here&nbsp;<a href="https://kenwheeler.github.io/slick/"
-          target="_blank">https://kenwheeler.github.io/slick/</a>
+        You can find more documentation here&nbsp;<a href="https://swiperjs.com/demos/"
+          target="_blank">https://swiperjs.com/demos/</a>
       </p>
-    </section>
-    <section id="google_map">
-      <div class="page-header">
-        <h3>Google Map</h3>
-        <hr class="notop" />
-      </div>
-      <div>
-        The map used in the content is a google map embedded
-      </div>
-      <div>
-        <a href="https://www.google.ng/maps">https://www.google.ng/maps</a>
-      </div>
-      <div>
-        &nbsp;
-      </div>
-      <div>
-        &nbsp;
-      </div>
-      <div>
-        change&nbsp;
-      </div>
-      <pre class="prettyprint lang-html linenums">change the src="https://www.google.com/maps/embed?pb=XXXXXXXX" url
-&lt;iframe
-	src=""
-	width="100%"
-	height="450"
-	frameborder="0"
-	style="border: 0;"
-	allowfullscreen=""
-	aria-hidden="false"
-	tabindex="0"
-&gt;&lt;/iframe&gt;
-		</pre>
-
-      <div>
-        to
-      </div>
-      <pre class="prettyprint lang-html linenums">
-          To your preferred Location
-        </pre>
     </section>
     <section id="sources_and_credits">
       <div class="page-header">
@@ -551,15 +567,13 @@ $(document).ready(function () {
       </div>
 
       <div>
-        <strong>Slick Slider</strong>&nbsp;2 -
-        <a href="https://kenwheeler.github.io/slick/" target="_blank">https://kenwheeler.github.io/slick/</a>
+        <strong>Swiper Js</strong> -&nbsp;<a href="https://swiperjs.com/demos/">https://swiperjs.com/demos/</a>
       </div>
+
       <div>
-        <strong>wow.js</strong> -&nbsp;<a href="http://mynameismatthieu.com/WOW/">http://mynameismatthieu.com/WOW</a>/
+        <strong>Aos </strong> -&nbsp;<a href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a>
       </div>
-      <div>
-        <strong>jquery.sticky.js</strong> -&nbsp;<a href="http://stickyjs.com/">http://stickyjs.com/</a>
-      </div>
+
       <div>
         &nbsp;
       </div>
