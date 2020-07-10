@@ -11,9 +11,10 @@
   <link href="./assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
   <!-- Core theme CSS -->
   <link href="./assets/css/styles.css" rel="stylesheet" />
-  <!-- Swiper Js -->
+  <!-- Swiper CSS -->
   <link rel="stylesheet" href="./assets/css/swiper/swiper-bundle.min.css">
-
+  <!-- Aos CSS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <title> Bakery Site </title>
 </head>
@@ -53,23 +54,26 @@
   <!-- Masthead -->
   <section id="masthead">
     <div class="container">
-      <img class="masthead__image img-fluid " src="./assets/images/hero.png" alt="">
+      <div data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="500">
+        <img class="masthead__image img-fluid " src="./assets/images/hero.png" alt="">
+      </div>
       <div class="row">
         <div class="col-5 masthead__firstColumn">
-          <div class="masthead__circle"> </div>
+          <div class="masthead__circle" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="800"> </div>
         </div>
         <div class="col-lg-7 text-center w-100 col-12">
-
-          <h1 class="masthead__title mb-0"> Nonso Williams</h1>
-          <span>
-            <img src="./assets/images/icons/Line.png" alt="">
-            <img class="mx-3" src="./assets/images/icons/separator.png" alt="">
-            <img src="./assets/images/icons/Line.png" alt="">
-          </span>
-          <h2 class="text-uppercase masthead__subtitle font-weight-normal mt-3">Private cake chef </h2>
-          <div class="masthead__icons d-flex justify-content-center mt-3">
-            <a href=""><img src="./assets/images/icons/instagram.png" alt=""></a>
-            <a href=""><img src="./assets/images/icons/twitter.png" alt=""></a>
+          <div data-aos="zoom-in" data-aos-duration="2000">
+            <h1 class="masthead__title mb-0"> Nonso Williams</h1>
+            <span>
+              <img src="./assets/images/icons/Line.png" alt="">
+              <img class="mx-3" src="./assets/images/icons/separator.png" alt="">
+              <img src="./assets/images/icons/Line.png" alt="">
+            </span>
+            <h2 class="text-uppercase masthead__subtitle font-weight-normal mt-3">Private cake chef </h2>
+            <div class="masthead__icons d-flex justify-content-center mt-3">
+              <a href=""><img src="./assets/images/icons/instagram.png" alt=""></a>
+              <a href=""><img src="./assets/images/icons/twitter.png" alt=""></a>
+            </div>
           </div>
         </div>
 
@@ -253,6 +257,8 @@
   <script src="./assets/js/swiper/swiper-bundle.min.js"></script>
   <!-- Swiper Custome Js -->
   <script src="./assets/js/swiper/swiperjs-custom.js"></script>
+  <!-- Animations Links -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Custome Js -->
   <script src="./assets/js/custom.js"></script>
 </body>
