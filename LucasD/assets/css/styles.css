@@ -35,10 +35,9 @@ h3 {
   font-weight: 700;
 }
 
-@media screen and (max-width:500px){
-  h3{
+@media screen and (max-width: 500px) {
+  h3 {
     font-size: 3rem;
-
   }
 }
 
@@ -50,7 +49,6 @@ h3 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-  
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -94,9 +92,7 @@ h3 {
   background-color: var(--white-color);
   margin: 0 auto;
   box-shadow: 3px 1px 13px hsla(228, 6%, 66%, 0.3);
- 
- }
-
+}
 
 #mainNav.navbar-shrink .navbar-brand {
   transform: scale(1.4);
@@ -124,6 +120,29 @@ h3 {
   }
 }
 /* Navbar*/
+
+/* Back to top Button*/
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  font-size: 3.5rem;
+  z-index: 100;
+}
+
+.back-to-top .backIcon {
+  background: var(--title-color);
+  border: 2x solid var(--yellow);
+  border-radius: 50%;
+  padding: 10px;
+  transform: scale(0.7);
+}
+
+.back-to-top:hover .backIcon {
+  opacity: 0.7;
+}
+
+/* Back to top Button*/
 
 /* Masthead*/
 
@@ -214,13 +233,12 @@ h3 {
   }
 }
 
-
-@media screen and (max-width:500px){
-  .masthead__title{
+@media screen and (max-width: 500px) {
+  .masthead__title {
     font-size: 3.5rem;
   }
 
-  .masthead__subtitle{
+  .masthead__subtitle {
     font-size: 1.5rem;
   }
 }
@@ -254,13 +272,11 @@ h3 {
   }
 }
 
-
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
   #about p {
     font-size: 1.1rem;
   }
 }
-
 
 /* Profile */
 
@@ -345,12 +361,11 @@ h3 {
   }
 }
 
-
 /* Portfolio */
 
 /* Blogs */
 
-#blog{
+#blog {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -358,7 +373,6 @@ h3 {
 .blog__card {
   position: relative;
   font-family: var(--text-font);
-
 }
 
 .blog__card-body {
@@ -367,7 +381,6 @@ h3 {
   margin: 1rem;
   position: absolute;
   bottom: 0;
-
 }
 
 .blog__card-body h4 {
@@ -376,7 +389,6 @@ h3 {
 
 .blog__card-body p {
   color: var(--white-color);
-
 }
 
 .btn-blog {
@@ -395,57 +407,53 @@ h3 {
   border: 1px solid var(--green-color);
 }
 
-
-@media screen and (max-width:500px){
+@media screen and (max-width: 500px) {
   .blog__card-body p {
-display: none;
+    display: none;
   }
 
-.blog__card-body {
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
+  .blog__card-body {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 
-
-  .btn-blog{
+  .btn-blog {
     padding: 0.75rem 1rem;
     margin: 0 auto;
   }
 
- .blog__card-body {
-  padding: 1rem 1rem;
-
-
- }
-
+  .blog__card-body {
+    padding: 1rem 1rem;
+  }
 }
 
 /* Blogs */
 
 /* Form */
-#contact{
+#contact {
   position: relative;
   overflow: hidden;
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.contact__image1{
+.contact__image1 {
   position: absolute;
-   top: 0;
+  top: 0;
   z-index: -1;
 }
 
-.contact__image2{
+.contact__image2 {
   position: absolute;
   bottom: -150px;
   right: -30px;
   z-index: -1;
 }
 
-#contact input, #contact textarea{
+#contact input,
+#contact textarea {
   box-shadow: 3px 1px 13px hsla(228, 6%, 66%, 0.3);
 }
 
@@ -454,9 +462,9 @@ display: none;
   border: 1px solid var(--footer-color);
   bottom: 70px;
   color: var(--white-color);
-    padding: 0.75rem 3rem;
-    display: block;
- }
+  padding: 0.75rem 3rem;
+  display: block;
+}
 
 .btn-form:hover {
   background-color: transparent;
@@ -464,12 +472,12 @@ display: none;
   border: 1px solid var(--footer-color);
 }
 
-@media screen and (max-width:1100px){
-  .contact__image1{
+@media screen and (max-width: 1100px) {
+  .contact__image1 {
     top: 50px;
   }
 
-  .contact__image2{
+  .contact__image2 {
     display: none;
   }
 }
@@ -477,21 +485,21 @@ display: none;
 /* Form */
 
 /* Footer */
-#footer{
+#footer {
   background: var(--footer-color);
-  color:var(--white-color);
+  color: var(--white-color);
   margin-top: 5rem;
   padding: 1rem 0;
 }
 
-#footer .container-fluid{
+#footer .container-fluid {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-#footer h5{
-font-family: var(--title-font);
-font-size: 2rem;
+#footer h5 {
+  font-family: var(--title-font);
+  font-size: 2rem;
 }
 
 .footer__icons a {
