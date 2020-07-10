@@ -332,11 +332,11 @@ h3 {
     border: none;
   }
 
-  .btn-work {
+  .btn-portfolio {
     display: none;
   }
 
-  .swiper-slide-next .btn-work {
+  .swiper-slide-next .btn-portfolio {
     display: block;
   }
 
