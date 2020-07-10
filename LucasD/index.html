@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Nunito+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="./assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!-- Core theme CSS -->
+  <link href="./assets/css/styles.css" rel="stylesheet" />
+  <!-- Swiper Js -->
+  <link rel="stylesheet" href="./assets/css/swiper/swiper-bundle.min.css">
+
+
+  <title> Bakery Site </title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top text-uppercase  " id="mainNav">
+    <div class="container-fluid navbar__container">
+      <a class="navbar-brand" href="#"> <img src="./assets/images/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav  ml-auto text-center ">
+          <li class="nav-item  ">
+            <a class="nav-link " href="#"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio"> Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Masthead -->
+  <section id="masthead">
+    <div class="container">
+      <img class="masthead__image img-fluid " src="./assets/images/hero.png" alt="">
+      <div class="row">
+        <div class="col-5 masthead__firstColumn">
+          <div class="masthead__circle"> </div>
+        </div>
+        <div class="col-lg-7 text-center w-100 col-12">
+
+          <h1 class="masthead__title mb-0"> Nonso Williams</h1>
+          <span>
+            <img src="./assets/images/icons/Line.png" alt="">
+            <img class="mx-3" src="./assets/images/icons/separator.png" alt="">
+            <img src="./assets/images/icons/Line.png" alt="">
+          </span>
+          <h2 class="text-uppercase masthead__subtitle font-weight-normal mt-3">Private cake chef </h2>
+          <div class="masthead__icons d-flex justify-content-center mt-3">
+            <a href=""><img src="./assets/images/icons/instagram.png" alt=""></a>
+            <a href=""><img src="./assets/images/icons/twitter.png" alt=""></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Masthead -->
+
+  <!-- About -->
+  <section class=" h-100" id="about">
+    <div class="container-fluid h-100 align-self-end">
+      <div class="row  h-100 align-self-end ">
+        <div class="col-lg-4 align-self-end px-0 ">
+          <img class="w-100 mx-auto d-block" src="./assets/images/baker.png">
+        </div>
+        <div class="col-lg-5 pt-5 w-100 mb-4 d-flex justify-content-center align-items-center flex-column mx-auto ">
+          <div class="text-center  text-lg-left">
+            <h3>Hi, I am Nonso Williams</h3>
+            <p>I am a Cake Chef, most folks know me as Nonso but in the inudustry I’m also known as the Fundat King. I
+              have been a Cake Chef for the better part of a decade. I cut my teeth at the Abuja Catering School for
+              Deserts before obtaining a degree at the famous institute of Culinary Education in Pastry Arts, Cake
+              Techniques & Design as well as the Art of International Bread Baking</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h3 class="text-center"> Some of my Works</h3>
+    <span class="text-center d-block mb-4">
+      <img src="./assets/images/icons/Line.png" alt="">
+      <img class="mx-3" src="./assets/images/icons/separator.png" alt="">
+      <img src="./assets/images/icons/Line.png" alt="">
+    </span>
+    <p class="text-center  w-75 mx-auto"> Here is a compilation of some of the cakes and pastries I've made over the
+      years.
+      Please feel free to presuse throuh them and feed your eyes.
+    </p>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="portfolio__card">
+            <img src="./assets/images/portfolio/1.png" style="height: 650px;" alt="">
+            <button class="btn btn-portfolio text-uppercase"> Desserts </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="portfolio__card">
+            <img src="./assets/images/portfolio/2.png" style="height: 650px;" alt="">
+            <button class="btn btn-portfolio text-uppercase"> cupcakes </button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="portfolio__card">
+            <img src="./assets/images/portfolio/3.png" style="height: 650px;" alt="">
+            <button class="btn btn-portfolio text-uppercase"> Cakes </button>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  </section>
+  <!-- Portfolio -->
+
+  <!-- Blog -->
+  <section id="blog">
+    <div class="container-fluid">
+      <h3 class="text-center"> My Blog Posts</h3>
+      <span class="text-center d-block mb-4">
+        <img src="./assets/images/icons/Line.png" alt="">
+        <img class="mx-3" src="./assets/images/icons/separator.png" alt="">
+        <img src="./assets/images/icons/Line.png" alt="">
+      </span>
+
+      <div class="row w-100 justify-content-around mt-5 mb-5 mx-auto">
+        <div class="col-12 col-lg-5  mb-4">
+          <div class="blog__card">
+            <img class="w-100" src="./assets/images/posts/1.png" alt="">
+            <div class="blog__card-body">
+              <h4> Pecan Pie Recipe</h4>
+              <p> So I woke up this morning and had the most marevelous
+                Idea for my already awesome pecan pie recipe. Yes we're adding
+                a new ingredient but it's something that you can easily lay your hand
+              </p>
+              <button class="btn btn-blog text-uppercase">Read more </button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="blog__card">
+            <img class="w-100 h-100" src="./assets/images/posts/2.png" alt="">
+            <div class="blog__card-body">
+              <h4> Pecan Pie Recipe</h4>
+              <p> So I woke up this morning and had the most marevelous
+                Idea for my already awesome pecan pie recipe. Yes we're adding
+                a new ingredient but it's something that you can easily lay your hand
+              </p>
+              <button class="btn btn-blog text-uppercase">Read more </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Blog -->
+
+  <!-- Contact -->
+  <section id="contact" class="mt-5">
+    <img class="contact__image1" src="./assets/images/contact/1.png" alt="">
+    <img class="contact__image2" src="./assets/images/contact/2.png" alt="">
+    <div class="container-fluid">
+      <h3 class="text-center"> Need My Services? </h3>
+      <span class="text-center d-block mb-4">
+        <img src="./assets/images/icons/Line.png" alt="">
+        <img class="mx-3" src="./assets/images/icons/separator.png" alt="">
+        <img src="./assets/images/icons/Line.png" alt="">
+      </span>
+      <form class="col-12 col-md-6 mx-auto">
+        <div class="form-group">
+          <label for="inputName"></label>
+          <input type="text" class="form-control" id="inputName" placeholder="Joel Ebuka">
+        </div>
+        <div class="form-group">
+          <label for="inputEmail"></label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="joelebuka@gmail.com">
+        </div>
+        <div class="form-group">
+          <label for="inputEvent"></label>
+          <input type="text" class="form-control" id="inputEvent" placeholder="Posible Git At Sheraton">
+        </div>
+        <div class="form-group">
+          <label for="textArea"></label>
+          <textarea class="form-control" id="textArea" rows="5" placeholder="Messages"></textarea>
+        </div>
+        <div class="w-100 mt-5">
+          <button type="submit" class="btn btn-form mx-auto">Sign in</button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+
+
+  <!--Footer -->
+  <footer id="footer">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between flex-column flex-sm-row  ">
+        <span class="d-flex align-items-center justify-content-center">
+          <img class="mr-2" src="./assets/images/icons/copyright.png" alt="">
+          <h5 class="m-0"> Nonso Williams </h5>
+        </span>
+        <div class="footer__icons d-flex justify-content-center ">
+          <a href=""><img src="./assets/images/icons/instagram-white.png" alt=""></a>
+          <a href=""><img src="./assets/images/icons/twitter-white.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Footer -->
+
+  <!-- Main Jquery JS -->
+  <script src="./assets/js/jquery/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <!-- Popper JS -->
+  <script src="./assets/js/popper/popper.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="./assets/js/swiper/swiper-bundle.min.js"></script>
+  <!-- Swiper Custome Js -->
+  <script src="./assets/js/swiper/swiperjs-custom.js"></script>
+  <!-- Custome Js -->
+  <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>
