@@ -36,9 +36,14 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-.body {
-  background-color: grey;
+
+html {
+  scroll-padding-top: 88px;  
 }
+
+body {
+    scroll-padding-top:88px; 
+  }
 
 :root {
   --title-font: "Clicker Script", cursive;
