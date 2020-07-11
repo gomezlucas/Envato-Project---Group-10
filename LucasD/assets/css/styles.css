@@ -49,6 +49,7 @@
   --navbar-text: #4b420b;
   --grey-color: #e5e5e5;
   --green-color: #adb901;
+  --background-masthead: linear-gradient(90deg, rgba(229,229,229,1) 0%, rgba(243,243,243,1) 65%, rgba(255,255,255,1) 97%);
   --background-about: linear-gradient(
     34.34deg,
     #a7b2c3 19.51%,
@@ -182,7 +183,7 @@ h3 {
   width: 100%;
   height: 100vh;
   max-height: 100vmax;
-  background-color: var(--grey-color);
+  background-color: var(--background-masthead);
 }
 
 #masthead .container {
