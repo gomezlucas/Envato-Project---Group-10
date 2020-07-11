@@ -258,6 +258,7 @@
     - style.css                      - (Main CSS file) 
     - swiper/swiper-bundle.min.css   - (Swiper Minified CSS file)
     - bootstrap/bootstrap.min.css    - (Bootstrap Minified CSS file)
+    - aos/aos.css                    - (Aos Minified CSS file)
 
 </pre>
     </section>
@@ -293,6 +294,8 @@
 &lt;script src=&quot;/assets/js/swiper/swiper-bundle.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
 &lt;!-- Swiper Custome JS --&gt;
 &lt;script src=&quot;./assets/js/swiper/swiperjs-custom.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
+&lt;!-- Aos JS --&gt;
+&lt;script src=&quot;./assets/js/aos/aos.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
 &lt;!-- Custom JS --&gt;
 &lt;script src=&quot;./assets/js/custom.js&quot;&gt;&lt;/script&gt;
 </pre>
@@ -421,13 +424,31 @@
         <hr class="notop" />
       </div>
       <p>
-        This template uses Aos to animate the elements. To change the time or just remove them you can check the
-        documentation <a href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a>
+        This template uses Aos to animate the elements. To change the time of animation, settings, or disable it
+        /assets/js/custom.js
       </p>
-
       <pre class="prettyprint lang-html linenums">
-        &lt;div data-aos=&quot; fade-up&quot; &gt >&lt;/div&gt >
+        //initiliaze AOS
+        AOS.init(
+            {
+                offset: 100,
+                disable: function () {
+                    var maxWidth = 650;
+                    return window.innerWidth &gt; maxWidth;
+                }
+            }
+        );
+             </pre>
+      <p>
+       You can also can change the configuration on each element. Example: 
+      </p>
+      <pre class="prettyprint lang-html linenums">
+        &lt;div data-aos=&quot; fade-up&quot; &gt; &lt;/div&gt >
       </pre>
+
+      <p>
+        Find more info in the official documentation <a href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a>
+       </p>
     </section>
     <section id="sliders">
       <div class="page-header">

@@ -514,6 +514,7 @@ h3 {
   color: var(--white-color);
   margin-top: 5rem;
   padding: 1rem 0;
+  overflow: hidden;
 }
 
 #footer .container-fluid {

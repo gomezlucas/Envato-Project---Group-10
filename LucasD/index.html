@@ -12,10 +12,12 @@
   <link href="./assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
   <!-- Core theme CSS -->
   <link href="./assets/css/styles.css" rel="stylesheet" />
-  <!-- Swiper Js -->
+  <!-- Swiper CSS -->
   <link rel="stylesheet" href="./assets/css/swiper/swiper-bundle.min.css">
+  <!-- Aos CSS -->
+  <link href="./assets/css/aos/aos.css" rel="stylesheet">
 
-  <title> Baker's Template </title>
+  <title> Baker's Portfolio </title>
 </head>
 
 <body>
@@ -49,31 +51,36 @@
     </div>
   </nav>
   <!-- Navbar -->
+
   <!-- Back to Top Button-->
   <a id="back-to-top" href="#" class="back-to-top" role="button">
-    <img  class="backIcon" src="./assets/images/icons/arrowup.svg" alt="">
+    <img class="backIcon" src="./assets/images/icons/arrowup.svg" alt="">
   </a>
   <!-- Back to Top Button-->
+
   <!-- Masthead -->
   <section id="masthead">
     <div class="container">
-      <img class="masthead__image img-fluid " src="./assets/images/hero.png" alt="">
+      <div data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="500">
+        <img class="masthead__image img-fluid " src="./assets/images/hero.png" alt="">
+      </div>
       <div class="row">
         <div class="col-5 masthead__firstColumn">
-          <div class="masthead__circle"> </div>
+          <div class="masthead__circle" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="800"> </div>
         </div>
         <div class="col-lg-7 text-center w-100 col-12">
-
-          <h1 class="masthead__title mb-0"> Nonso Williams</h1>
-          <span>
-            <img src="./assets/images/icons/Line.png" alt="">
-            <img class="mx-3" src="./assets/images/icons/separator.png" alt="">
-            <img src="./assets/images/icons/Line.png" alt="">
-          </span>
-          <h2 class="text-uppercase masthead__subtitle font-weight-normal mt-3">Private cake chef </h2>
-          <div class="masthead__icons d-flex justify-content-center mt-3">
-            <a href=""><img src="./assets/images/icons/instagram.png" alt=""></a>
-            <a href=""><img src="./assets/images/icons/twitter.png" alt=""></a>
+          <div data-aos="zoom-in" data-aos-duration="2000">
+            <h1 class="masthead__title mb-0"> Nonso Williams</h1>
+            <span>
+              <img src="./assets/images/icons/Line.png" alt="">
+              <img class="mx-3" src="./assets/images/icons/separator.png" alt="">
+              <img src="./assets/images/icons/Line.png" alt="">
+            </span>
+            <h2 class="text-uppercase masthead__subtitle font-weight-normal mt-3">Private cake chef </h2>
+            <div class="masthead__icons d-flex justify-content-center mt-3">
+              <a href=""><img src="./assets/images/icons/instagram.png" alt=""></a>
+              <a href=""><img src="./assets/images/icons/twitter.png" alt=""></a>
+            </div>
           </div>
         </div>
 
@@ -87,10 +94,11 @@
     <div class="container-fluid h-100 align-self-end">
       <div class="row  h-100 align-self-end ">
         <div class="col-lg-4 align-self-end px-0 ">
-          <img class="w-100 mx-auto d-block" src="./assets/images/baker.png">
+          <img class="w-100 mx-auto d-block" src="./assets/images/baker.png" data-aos="fade-up-right"
+            data-aos-duration="2000">
         </div>
         <div class="col-lg-5 pt-5 w-100 mb-4 d-flex justify-content-center align-items-center flex-column mx-auto ">
-          <div class="text-center  text-lg-left">
+          <div class="text-center  text-lg-left" data-aos="fade-up-left" data-aos-duration="2000">
             <h3>Hi, I am Nonso Williams</h3>
             <p>I am a Cake Chef, most folks know me as Nonso but in the inudustry I’m also known as the Fundat King. I
               have been a Cake Chef for the better part of a decade. I cut my teeth at the Abuja Catering School for
@@ -104,18 +112,19 @@
   <!-- About -->
   <!-- Portfolio -->
   <section id="portfolio">
-    <h3 class="text-center"> Some of my Works</h3>
-    <span class="text-center d-block mb-4">
-      <img src="./assets/images/icons/Line.png" alt="">
-      <img class="mx-3" src="./assets/images/icons/separator.png" alt="">
-      <img src="./assets/images/icons/Line.png" alt="">
+    <h3 class="text-center" data-aos="fade-up" data-aos-duration="2000"> Some of my Works</h3>
+    <span class="text-center d-block mb-4" data-aos="fade-up" data-aos-duration="2000">
+      <img src="./assets/images/icons/lineSmall.png" alt="">
+      <img class="mx-3" src="./assets/images/icons/separatorSmall.png" alt="">
+      <img src="./assets/images/icons/lineSmall.png" alt="">
     </span>
-    <p class="text-center  w-75 mx-auto"> Here is a compilation of some of the cakes and pastries I've made over the
+    <p class="text-center  w-75 mx-auto" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400"> Here is a
+      compilation of some of the cakes and pastries I've made over the
       years.
       Please feel free to presuse throuh them and feed your eyes.
     </p>
     <!-- Slider main container -->
-    <div class="swiper-container">
+    <div class="swiper-container" data-aos="fade-up" data-aos-duration="2000">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -150,16 +159,16 @@
   <!-- Blog -->
   <section id="blog">
     <div class="container-fluid">
-      <h3 class="text-center"> My Blog Posts</h3>
-      <span class="text-center d-block mb-4">
-        <img src="./assets/images/icons/Line.png" alt="">
-        <img class="mx-3" src="./assets/images/icons/separator.png" alt="">
-        <img src="./assets/images/icons/Line.png" alt="">
+      <h3 class="text-center" data-aos="fade-up" data-aos-duration="2000"> My Blog Posts</h3>
+      <span class="text-center d-block mb-4" data-aos="fade-up" data-aos-duration="2000">
+        <img src="./assets/images/icons/lineSmall.png" alt="">
+        <img class="mx-3" src="./assets/images/icons/separatorSmall.png" alt="">
+        <img src="./assets/images/icons/lineSmall.png" alt="">
       </span>
 
       <div class="row w-100 justify-content-around mt-5 mb-5 mx-auto">
         <div class="col-12 col-lg-5  mb-4">
-          <div class="blog__card">
+          <div class="blog__card" data-aos="flip-right" data-aos-duration="2000">
             <img class="w-100" src="./assets/images/posts/1.png" alt="">
             <div class="blog__card-body">
               <h4> Pecan Pie Recipe</h4>
@@ -193,16 +202,18 @@
 
   <!-- Contact -->
   <section id="contact" class="mt-5">
-    <img class="contact__image1" src="./assets/images/contact/1.png" alt="">
-    <img class="contact__image2" src="./assets/images/contact/2.png" alt="">
+    <img class="contact__image1" src="./assets/images/contact/1.png" data-aos="zoom-in" data-aos-duration="3000"
+      data-aos-delay="450" alt="">
+    <img class="contact__image2" src="./assets/images/contact/2.png" data-aos="zoom-in" data-aos-duration="3000"
+      data-aos-delay="650" alt="">
     <div class="container-fluid">
-      <h3 class="text-center"> Need My Services? </h3>
-      <span class="text-center d-block mb-4">
-        <img src="./assets/images/icons/Line.png" alt="">
-        <img class="mx-3" src="./assets/images/icons/separator.png" alt="">
-        <img src="./assets/images/icons/Line.png" alt="">
+      <h3 class="text-center" data-aos="fade-up" data-aos-duration="2000"> Need My Services? </h3>
+      <span class="text-center d-block mb-4" data-aos="fade-up" data-aos-duration="2000">
+        <img src="./assets/images/icons/lineSmall.png" alt="">
+        <img class="mx-3" src="./assets/images/icons/separatorSmall.png" alt="">
+        <img src="./assets/images/icons/lineSmall.png" alt="">
       </span>
-      <form class="col-12 col-md-6 mx-auto">
+      <form class="col-12 col-md-6 mx-auto" data-aos="zoom-in" data-aos-duration="2000">
         <div class="form-group">
           <label for="inputName"></label>
           <input type="text" class="form-control" id="inputName" placeholder="Joel Ebuka">
@@ -223,7 +234,6 @@
           <button type="submit" class="btn btn-form mx-auto">Sign in</button>
         </div>
       </form>
-
     </div>
   </section>
 
@@ -233,7 +243,8 @@
   <!--Footer -->
   <footer id="footer">
     <div class="container-fluid">
-      <div class="d-flex justify-content-between flex-column flex-sm-row  ">
+      <div class="d-flex justify-content-between flex-column flex-sm-row" data-aos="fade-up" data-aos-duration="2000"
+        data-aos-offset="0">
         <span class="d-flex align-items-center justify-content-center">
           <img class="mr-2" src="./assets/images/icons/copyright.png" alt="">
           <h5 class="m-0"> Nonso Williams </h5>
@@ -257,6 +268,8 @@
   <script src="./assets/js/swiper/swiper-bundle.min.js"></script>
   <!-- Swiper Custome Js -->
   <script src="./assets/js/swiper/swiperjs-custom.js"></script>
+  <!-- Aos JS -->
+  <script src="./assets/js/aos/aos.js"></script>
   <!-- Custome Js -->
   <script src="./assets/js/custom.js"></script>
 </body>
